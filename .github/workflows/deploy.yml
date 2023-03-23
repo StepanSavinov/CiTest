@@ -26,6 +26,6 @@ jobs:
         uses: docker/build-push-action@v4
         with:
           context: .
-          file: ~/RiderProjects/CiTest/CiTest/Dockerfile
+          file: /Users/stepansavinov/RiderProjects/CiTest/CiTest/Dockerfile
           push: true
           tags: ${{ secrets.DOCKERHUB_USERNAME }}/clockbox:latest
