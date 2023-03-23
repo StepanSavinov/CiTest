@@ -4,7 +4,7 @@ services:
   ci.test:
     image: ${DOCKER_REGISTRY-}citest
     ports:
-      - "5000:80"
+      - "5001:80"
     build:
       context: .
       dockerfile: CiTest/Dockerfile
